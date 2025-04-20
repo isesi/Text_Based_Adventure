@@ -16,6 +16,24 @@ Before you can submit your paper, you must find three essential items you've mis
 - **Lucky Mug**  
 You've had this mug with you for every assignment you've submitted. You can't go without it now!
 
-#
+<br><br>
+### The Goal: Find all the items and submit your paper before the deadline!!
+Once you have collected all 3 items, go to your dorm room and "submit" your project!
 
-### Find all the items and submit your paper before the deadline!!
+
+#
+To test this project, run the adventure.py file. <br>
+This project takes user input and returns output through the console. <br><br>
+The user can input:
+- a direction/location as written on the response
+- the name of an item to which something will happen if that item is in the current room
+- a menu action such as "inventory" or "score".
+
+
+
+If you try to get an item and fail the puzzle, you will lose a turn and you will have to attempt the puzzle again.
+Important note!! One of the puzzles for the items has a wordle
+
+
+
+
