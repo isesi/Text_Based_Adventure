@@ -1,0 +1,125 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Bahen 1F",
+      "brief_description": "You are on the first floor of the Bahen Center. There are elevators to the West, and an exit from the building to St. George street to the East. You see something shiny on the ground -- looks like a toonie?",
+      "long_description": "You are on the first floor of the Bahen Center. It's usually crowded at this time of the day, but today it's eerily quiet. Only a few students are studying at the table near the doors. You better not disturb them. One student is rushing down the corridor, wearing a heavy-looking backpack and carrying a textbook in their arms. There are elevators to the West, and an exit from the building to St. George street to the East.",
+      "available_commands": {
+        "go east": 2
+      },
+      "items": ["toonie"]
+    },
+    {
+      "id": 2,
+      "name": "St George Street",
+      "brief_description": "You are on the sidewalk of St George Street. You can go South to the health sci building, West to Myhal, East to Bahen, or North back to your room.",
+      "long_description": "You are on the sidewalk of St George Street. You use this road to get to and from class, and its right in the middle of the UofT campus. You can walk south to go to College St. and the health sci building, West to Bahen, East to Myhal, or go North to your dorm room.",
+      "available_commands": {
+        "go west": 1,
+        "go east": 3,
+        "go north": 4,
+        "go south": 6
+      },
+      "items": []
+    },
+    {
+      "id": 3,
+      "name": "Myhal Center",
+      "brief_description": "You are at Myhal Center. You can go west to St George St. Also, could you have left your charger in the wall?",
+      "long_description": "You are at Myhal Center. You used to come here every Monday for your CSC110 lecture, but now you only come here sometimes to catch up on some work, since it's a pretty nice building.",
+      "available_commands": {
+        "go west": 2
+      },
+      "items": ["charger"]
+    },
+    {
+      "id": 4,
+      "name": "Dorm Room",
+      "brief_description": "You are at your dorm room. You may leave items here. You can go west to St George, to the <kitchen>, or to the <porter>.",
+      "long_description": "You are at your dorm room, your home away from home. You can drop off any items you have here. Your dead computer is on your desk, and the time is ticking! Better get moving.",
+      "available_commands": {
+        "go south": 2,
+        "kitchen": 5,
+        "porter": 7
+      },
+      "items":["tcard"]
+    },
+    {
+      "id": 5,
+      "name": "Kitchen",
+      "brief_description": "You are in your small kitchen that you share with your floor. There is a small note on the fridge. You can go back to your <room> or to the <porter>.",
+      "long_description": "You are in your kitchen that you share with your neighbors. There is a microwave, fridge, kettle, and some trash cans in the corner. There is a <note> stuck to the fridge. You can go back to your <room> or to the <porter>.",
+      "available_commands": {
+        "room": 4,
+        "porter": 7
+      },
+      "items": ["note"]
+    },
+    {
+      "id": 6,
+      "name": "Health Sciences",
+      "brief_description": "This is the health sci building, where many of your CS lectures are held. You can go north to St George Street. Could this be where your USB drive is?",
+      "long_description": "This is the health sci building. You come here every week for CS lectures, and you always make sure to be early so that you don't have to wait for the elevator. You can go north to St George.",
+      "available_commands": {
+        "go north": 2
+      },
+      "items": ["usb drive"]
+    },
+    {
+      "id": 7,
+      "name": "Porter",
+      "brief_description": "This is the porter's office for your residence. Would they have your lost <lucky mug>? You can <go up> to your dorm room or to the <kitchen>.",
+      "long_description": "This is the porter's office, where all of your packages get delivered and where they collect lost items. Maybe they have your <lucky mug>! You can <go up> to your dorm room or to the <kitchen>",
+      "available_commands": {
+        "go up": 4,
+        "kitchen": 5
+      },
+      "items": ["lucky mug"]
+    }
+  ],
+  "items": [
+    {
+      "name": "toonie",
+      "description": "You found this toonie on the ground. Someone must have dropped it.\n",
+      "start_position": 1,
+      "target_position": 4,
+      "target_points": 5
+    },
+    {
+      "name": "charger",
+      "description": "It's your trusty computer charger. Thank god it wasn't stolen!\n",
+      "start_position": 3,
+      "target_position": 4,
+      "target_points": 20
+    },
+    {
+      "name": "lucky mug",
+      "description": "This is your lucky mug that you've had for every important assignment!\n",
+      "start_position": 7,
+      "target_position": 4,
+      "target_points": 20
+    },
+    {
+      "name": "usb drive",
+      "description": "This USB has the data for your game!\n",
+      "start_position": 1,
+      "target_position": 4,
+      "target_points": 30
+    },
+    {
+      "name": "note",
+      "description": "The note says: 'All lost items will be sent to the porter'.\nYou will need your TCard to access your lost items. Last time you remember, the TCard was in your room.\n",
+      "start_position": 5,
+      "target_position": 4,
+      "target_points": 1
+    },
+    {
+      "name": "tcard",
+      "description": "This is your TCard. You use this for your identity and for getting into buildings!\n",
+      "start_position": 4,
+      "target_position": 7,
+      "target_points": 10
+    }
+  ]
+}
