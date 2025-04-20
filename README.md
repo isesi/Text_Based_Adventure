@@ -31,9 +31,9 @@ The user can input:
 
 
 
-If you try to get an item and fail the puzzle, you will lose a turn and you will have to attempt the puzzle again.
-Important note!! One of the puzzles for the items has a wordle
-
+If you try to get an item and fail the puzzle, you will lose a turn and you will have to attempt the puzzle again.<br>
+Important note!! One of the puzzles for the items has a wordle<br><br>
+Also, apologies for the bad code design, I wasn't expecting to show this to anyone anytime soon 😅
 
 
 
